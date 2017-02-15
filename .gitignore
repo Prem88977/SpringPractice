@@ -1,2 +1,8 @@
 SpringPractice/.idea
 SpringPractice.iml
+*.class
+.classpath
+spring-hibernate-code-v7-source-files-only-no-jars.zip
+.project
+spring-hibernate-code-v7-source-files-only-no-jars
+SpringPractice/target
