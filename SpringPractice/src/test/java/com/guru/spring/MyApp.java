@@ -22,10 +22,12 @@ public class MyApp {
 
 
         //retrive bean from spring container
-        Coach myCoach = context.getBean("myCoach", Coach.class);
+        Coach coach = context.getBean("myCoach", Coach.class);
+
 
         // Call method on the bean
-        System.out.println(myCoach.getDailyWorkOut());
+        System.out.println(coach.getDailyWorkOut());
+        System.out.println(coach.getFortune());
 
         //Close the context
         context.close();

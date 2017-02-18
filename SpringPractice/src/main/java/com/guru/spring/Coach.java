@@ -5,5 +5,7 @@ package com.guru.spring;
  */
 public interface Coach {
 
-    String getDailyWorkOut();
+    public String getDailyWorkOut();
+
+    public String getFortune();
 }

@@ -10,9 +10,13 @@
     <!-- Define your beans here -->
 
     <bean id="myCoach"
-    class="com.guru.spring.TrackCoach">
+    class="com.guru.spring.BaseballCoach">
+        <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
 
+    <bean id="myFortuneService"
+          class="com.guru.spring.helpers.HappyFortuneService">
+    </bean>
 
 </beans>
 
