@@ -17,11 +17,17 @@ public class MyApp {
         System.out.println(theCoach.getDailyWorkOut());*/
 
 
+        //Load the spring config file
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 
+        //retrive bean from spring container
         Coach myCoach = context.getBean("myCoach", Coach.class);
 
+        // Call method on the bean
         System.out.println(myCoach.getDailyWorkOut());
+
+        //Close the context
+        context.close();
     }
 }
