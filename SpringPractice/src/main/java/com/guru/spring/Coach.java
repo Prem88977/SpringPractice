@@ -7,5 +7,5 @@ public interface Coach {
 
     public String getDailyWorkOut();
 
-    public String getFortune();
+    public String getDailyFortune();
 }

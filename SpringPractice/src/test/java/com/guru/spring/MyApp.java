@@ -27,7 +27,7 @@ public class MyApp {
 
         // Call method on the bean
         System.out.println(coach.getDailyWorkOut());
-        System.out.println(coach.getFortune());
+        System.out.println(coach.getDailyFortune());
 
         //Close the context
         context.close();
