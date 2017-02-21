@@ -11,12 +11,14 @@ public class BaseballCoach implements Coach {
 
     // define contructor for dependency injection
     public BaseballCoach(FortuneService fortuneService){
+        System.out.println("In Baseball Coach arg constructor");
         this.fortuneService = fortuneService;
     }
 
 
     public String getDailyWorkOut() {
-        return "Spend 30 min on base ball batting practice";
+        System.out.println();
+        return "Baseball Coach : Spend 30 min on base ball batting practice";
     }
 
     public String getDailyFortune() {

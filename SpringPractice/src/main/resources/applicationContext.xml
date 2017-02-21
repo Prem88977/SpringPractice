@@ -14,9 +14,20 @@
         <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
 
-    <bean id="myFortuneService"
-          class="com.guru.spring.helpers.HappyFortuneService">
+    <bean id="myCricketCoach"
+        class="com.guru.spring.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"></property>
     </bean>
+
+
+
+    <bean id="myFortuneService"
+          class="com.guru.spring.helpers.FriendlyFortuneService">
+    </bean>
+
+    <bean id="playerOfTheMatchFortune"
+          class="com.guru.spring.helpers.PlayerOfTheMatchService"></bean>
+
 
 </beans>
 
