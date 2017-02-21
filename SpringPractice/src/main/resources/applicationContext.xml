@@ -12,6 +12,8 @@
     <bean id="myCoach"
     class="com.guru.spring.BaseballCoach">
         <constructor-arg ref="myFortuneService"></constructor-arg>
+        <property name="prop_emailId" value="${emailId}"></property>
+        <property name="prop_team" value="${team}"></property>
     </bean>
 
     <bean id="myCricketCoach"
@@ -22,6 +24,7 @@
     </bean>
 
 
+    <context:property-placeholder location="classpath:coach.properties"></context:property-placeholder>
 
     <bean id="myFortuneService"
           class="com.guru.spring.helpers.FriendlyFortuneService">

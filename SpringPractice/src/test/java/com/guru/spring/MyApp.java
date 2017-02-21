@@ -25,14 +25,24 @@ public class MyApp {
         Coach coach = context.getBean("myCoach", Coach.class);
 
         CricketCoach cricketCoach = context.getBean("myCricketCoach", CricketCoach.class);
-
+        BaseballCoach baseballCoach = context.getBean("myCoach", BaseballCoach.class);
 
         // Call method on the bean
         System.out.println(coach.getDailyWorkOut());
         System.out.println(coach.getDailyFortune());
 
+        System.out.println("**************************************");
+
+        System.out.println(baseballCoach.getProp_emailId());
+        System.out.println(baseballCoach.getProp_team());
+
+        System.out.println("**************************************");
+
         System.out.println(cricketCoach.getDailyWorkOut());
         System.out.println(cricketCoach.getDailyFortune());
+
+        System.out.println("**************************************");
+
         System.out.println(cricketCoach.getEmailId());
         System.out.println(cricketCoach.getTeam());
 
