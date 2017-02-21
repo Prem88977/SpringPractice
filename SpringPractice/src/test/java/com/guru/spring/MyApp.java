@@ -33,6 +33,9 @@ public class MyApp {
 
         System.out.println(cricketCoach.getDailyWorkOut());
         System.out.println(cricketCoach.getDailyFortune());
+        System.out.println(cricketCoach.getEmailId());
+        System.out.println(cricketCoach.getTeam());
+
 
         //Close the context
         context.close();

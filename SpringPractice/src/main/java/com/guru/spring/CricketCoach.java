@@ -7,13 +7,30 @@ import com.guru.spring.helpers.FortuneService;
  */
 public class CricketCoach  implements Coach{
     private FortuneService fortuneService;
-
-    public FortuneService getFortuneService() {
-        return fortuneService;
-    }
+    private String emailId, team;
 
     public CricketCoach() {
         System.out.println("In CricketCoach default constructor");
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+
+    public FortuneService getFortuneService() {
+        return fortuneService;
     }
 
     public void setFortuneService(FortuneService fortuneService) {

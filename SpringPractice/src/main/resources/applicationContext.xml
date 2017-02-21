@@ -17,6 +17,8 @@
     <bean id="myCricketCoach"
         class="com.guru.spring.CricketCoach">
         <property name="fortuneService" ref="myFortuneService"></property>
+        <property name="emailId" value="mycricketcoach@gmail.com"></property>
+        <property name="team" value="India"></property>
     </bean>
 
 
