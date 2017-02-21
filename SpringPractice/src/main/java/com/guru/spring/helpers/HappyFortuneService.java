@@ -5,6 +5,6 @@ package com.guru.spring.helpers;
  */
 public class HappyFortuneService implements FortuneService {
     public String getFortune() {
-        return "You will have a Happy Day!";
+        return "HappyFortuneService" + "You will have a Happy Day!";
     }
 }

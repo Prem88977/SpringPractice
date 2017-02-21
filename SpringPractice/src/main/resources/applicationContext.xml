@@ -26,7 +26,7 @@
     </bean>
 
     <bean id="playerOfTheMatchFortune"
-          class="com.guru.spring.helpers.PlayerOfTheMatchService"></bean>
+          class="com.guru.spring.helpers.PlayerOfTheMatchFortuneService"></bean>
 
 
 </beans>

@@ -22,7 +22,7 @@ public class CricketCoach  implements Coach{
     }
 
     public String getDailyWorkOut() {
-        return "Practise hitting sixes!";
+        return "CricketCoach: Practise hitting sixes!";
     }
 
     public String getDailyFortune() {

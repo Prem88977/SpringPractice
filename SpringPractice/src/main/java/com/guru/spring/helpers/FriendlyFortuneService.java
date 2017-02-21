@@ -6,6 +6,6 @@ package com.guru.spring.helpers;
 public class FriendlyFortuneService implements FortuneService {
 
     public String getFortune() {
-        return "You will make new friends today!!";
+        return "FriendlyFortuneService" + "You will make new friends today!!";
     }
 }

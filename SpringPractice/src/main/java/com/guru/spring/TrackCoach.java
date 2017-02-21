@@ -13,7 +13,7 @@ public class TrackCoach implements Coach {
     }
 
     public String getDailyWorkOut() {
-        return "Run 10K !!!";
+        return "TrackCoach: Run 10K !!!";
     }
 
     public String getDailyFortune() {

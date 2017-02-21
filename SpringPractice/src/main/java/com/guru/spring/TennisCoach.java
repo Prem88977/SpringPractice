@@ -14,7 +14,7 @@ public class TennisCoach implements Coach{
     }
 
     public String getDailyWorkOut() {
-        return "Practise Service !!";
+        return "TennisCoach: Practise Service !!";
     }
 
     public String getDailyFortune() {
