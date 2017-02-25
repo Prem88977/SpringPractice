@@ -20,6 +20,7 @@ public class MyAnnotationApp {
 
         // call methods on the bean
         System.out.println(coach.getDailyWorkout());
+        System.out.println((coach.getFortune()));
 
 
         //close the context
