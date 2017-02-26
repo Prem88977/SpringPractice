@@ -1,6 +1,7 @@
 package com.guru.spring;
 
 import com.guru.spring.helpers.FortuneService;
+import com.guru.spring.helpers.WealthyFortuneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,11 +12,11 @@ import org.springframework.stereotype.Component;
 @Component()
 public class TennisCoach implements Coach{
 
-    private FortuneService fortuneService;
+    private WealthyFortuneService wealthyFortuneService;
 
     @Autowired
-    public TennisCoach(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
+    public TennisCoach(WealthyFortuneService wealthyFortuneService) {
+        this.wealthyFortuneService = wealthyFortuneService;
     }
 
     public String getDailyWorkout() {
@@ -23,7 +24,7 @@ public class TennisCoach implements Coach{
     }
 
     public String getFortune() {
-        return "TennisCoach: " + fortuneService.getFortune();
+        return "TennisCoach: " + wealthyFortuneService.getFortune();
 
     }
 }
