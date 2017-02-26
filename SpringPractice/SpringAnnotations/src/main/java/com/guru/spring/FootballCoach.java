@@ -4,6 +4,7 @@ import com.guru.spring.helpers.FortuneService;
 import com.guru.spring.helpers.HappyFortuneService;
 import com.guru.spring.helpers.WealthyFortuneService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,8 +14,9 @@ import org.springframework.stereotype.Component;
 @Component()
 public class FootballCoach implements Coach{
 
-    /*@Autowired
-    private FortuneService fortuneService;*/
+    @Autowired
+    @Qualifier("happyFortuneService")
+    private FortuneService fortuneService;
 
     @Autowired
     private HappyFortuneService happyFortuneService;
@@ -28,7 +30,8 @@ public class FootballCoach implements Coach{
 
     public String getFortune() {
         return "FootballCoach: " + wealthyFortuneService.getFortune()
-                + " ******** " + happyFortuneService.getFortune();
+                + " ******** " + happyFortuneService.getFortune() + "************* "
+                + fortuneService.getFortune();
 
     }
 }
